@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultora de RRHH</title>
+    <link rel="stylesheet" href="./../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Consultora de RRHH</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="./../Index.html" id="inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="./nosotros.html" >
+                        Nosotros
+                    </a>
+                </li>
+                <li>
+                    <a href="./servicio.html" >
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a href="./contacto.html" >
+                        Contacto
+                    </a>
+                </li>
+                <li>
+                    <a class="botones" href="./trabajos.html" >
+                        Trabajos
+                    </a>
+                </li>
+                <li>
+                    <a class="botones" href="./clientes.html" >
+                        Clientes
+                    </a>
+                </li>
+                <li>
+                    <a class="botones" href="./cv.html">
+                        Cargá tu CV
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="./../Imagenes/icon-fb.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="./../Imagenes/icon-ig.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="./../Imagenes/icon-phone.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <div class="titulopages">
+        <h3>Consultas y reclamos</h3>
+    </div>
+    <hr>
+    <form action="">
+        <div class="inicio_formulario">
+            <div class="containermotivoform">
+                <P>Selecciona el motivo de tu mensaje</P><br>
+                    <div class="contenedor_radius">
+                        <label for="consulta" class="motivo_vinculo">Consulta
+                            <input type="radio"  name="motivo" value="consulta">
+                        </label>
+                        <label for="reclamo" class="motivo_vinculo">Reclamo
+                            <input type="radio" name="motivo" value="reclamo"> 
+                        </label>
+                    </div>
+            </div>
+            <div>
+                <P>Seleccioná tu vínculo con la empresa</P><br>
+                    <div class="contenedor_radius">
+                        <label for="Soy colaborador" class="motivo_vinculo">Soy colaborador
+                            <input type="radio" name="vinculo" value="soy_colaborador">
+                        </label>
+                        <label for="No soy colaborador" class="motivo_vinculo">No soy colaborador 
+                            <input type="radio" name="vinculo" value="no_soy_colaborador"><br>
+                        </label>
+                    </div>
+            </div>
+        </div>
+        <div class="form_input">
+            <div class="datos datosdni">
+                <label for="dni">DNI
+                </label>
+                <input type="number" id="dni" value="" required> 
+            </div>
+            <br>
+            <div class="datos datosnombre">
+                <label for="nombre_apellido">Nombre y apellido
+                </label>
+                <input type="text" id="nombre_apellido" value="" required> 
+            </div>
+            <br>
+            <div class="datos datosemail">
+                <label for="email">Email
+                </label>
+                <input type="email" id="email" value="" required> 
+            </div>
+            <br>
+            <div class="datos datostelefono">
+                <label for="telefono">Teléfono
+                </label>
+                <input type="number" id="telefono" value="" required> 
+            </div>
+            <br>
+            <div class="datos datosciudad">
+                <label for="ciudad">Ciudad
+                </label>
+                <input type="text" id="ciudad" value="" required> 
+            </div>
+            <div class="datos datosarea">
+                <label for="area">Area
+                </label>
+                <input type="text" id="area" value="" required> 
+            </div>
+            <br>
+        </div>
+        <div class="areadetexto">
+            <label for="mensaje">Mensaje
+                <textarea name="text" id="mensaje" cols="30" rows="10" required></textarea>
+            </label>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <footer>
+        <h6>Contactanos</h6>
+        <p>0810-000-0000</p>
+        <p>rrhh@consultora.com.ar</p>
+    </footer>
+</body>
+</html>
