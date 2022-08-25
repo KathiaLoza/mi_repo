@@ -10,7 +10,7 @@
 header{
     background-color: #3F51B5;
     padding: 20px;
-    position: sticky; 
+
     top: 0px;
     display: flex;
     justify-content: space-between;
@@ -62,10 +62,10 @@ height: 100%;
       input:checked  ~ ul{
         display:block;
       }
-      input {
+      #input_menu {
         display: none;
       }
-      label {
+      #label_menu {
         box-sizing: border-box;
         display: inline-block;
         border: 1px solid white;
@@ -105,10 +105,10 @@ height: 100%;
 }
 
 @media(min-width:1040px){
-    input {
+    #input_menu {
         display: none;
     }
-    label{
+    #label_menu{
         display:none;
     }
     
@@ -182,48 +182,9 @@ height: 100%;
         margin-bottom: 20px !important;
         padding: 25px !important;
     }
-    #staff{
-        display: grid ;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
-        grid-template-areas: 
-            "foto1"
-            "foto2"
-            "foto3"
-            "foto4"
-            "foto5" !important;
-    }
+    
 }
 
-@media (max-width: 900px){
-    #staff{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "foto1 foto1 foto2 foto2"
-        "foto3 foto3 foto4 foto4"
-        "..... foto5 foto5 ....." !important
-    ;
-    text-align: center;
-}
-}
-
-.foto1{
-    grid-area: foto1;
-}
-.foto2{
-    grid-area: foto2;
-}
-.foto3{
-    grid-area: foto3;
-}
-.foto4{
-    grid-area: foto4;
-}
-.foto5{
-    grid-area: foto5;
-}
 #inicio{
     color:rgb(255, 255, 255);
     font-weight: bold;
@@ -285,14 +246,16 @@ height: 100%;
 .novedades h3{
     text-align: center;
 }
-.novedades img{
+.novedades {
     width: 80%;
-    margin-left: 150px;
+    margin: auto;
+    position: static;
+  
 }
 
 .consultas{
     width: 100%;
-    height: 130px;
+
     text-align: center;
     padding: 45px 0px;
     background-color: #1d4174;  
@@ -301,7 +264,6 @@ height: 100%;
 
 footer{
     width: 100%;
-    height: 80px;
     text-align: center;
     padding: 25px 0px;
     background-color: rgb(255, 102, 0);
@@ -395,7 +357,7 @@ button{
     width: 250px;
 }
 
-.Titulo_staff{
+/* .Titulo_staff{
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -406,18 +368,20 @@ button{
 }
 
 #staff{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
+    display: grid!important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+    grid-template-rows: 1fr!important;
     grid-area: 
         "foto1 foto2 foto3 foto4 foto5"
     ;
+   
     text-align: center;
-    /* width: 100%; */
     padding: 25px;
     border: 100px;
     margin: 10px;
-}
+
+} */
+
 
 .Armadodecv{
     color: black;
