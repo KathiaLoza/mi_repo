@@ -55,17 +55,18 @@ height: 100%;
 @media (max-width: 1040px) {
     ul{
         display: none;
-      }
-      .menu{
+    }
+    
+    .menu{
         display: none;
-      }
-      input:checked  ~ ul{
+    }
+    input:checked  ~ ul{
         display:block;
-      }
-      #input_menu {
+    }
+    #input_menu {
         display: none;
-      }
-      #label_menu {
+    }
+    #label_menu {
         box-sizing: border-box;
         display: inline-block;
         border: 1px solid white;
@@ -78,8 +79,8 @@ height: 100%;
         user-select: none;
         color: white;
     
-      }
-      .menu li{
+    }
+    .menu li{
         display: block;
         /* background: lightgrey; */
         margin: 0;
@@ -102,6 +103,27 @@ height: 100%;
 .iconos_responsive{
     display:flex;
     justify-content: space-between;
+}
+
+.estilomenu{
+    font-size: 15px;
+}
+
+.estilomenu:hover{
+    font-size: 20px;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(359deg);
+    }
 }
 
 @media(min-width:1040px){
@@ -239,7 +261,8 @@ height: 100%;
     padding: 20px;
     text-align: center;
     line-height: 30px;
-    background-color: #BE6E69;      
+    background-color: #BE6E69;
+    background-image: linear-gradient(to bottom, #BE6E69, #643d3a);      
     border-radius: 30px;  
 }
 
@@ -250,7 +273,6 @@ height: 100%;
     width: 80%;
     margin: auto;
     position: static;
-  
 }
 
 .consultas{
@@ -308,7 +330,6 @@ button{
     display: grid;
     grid-template-columns: 30% 70% ;
     grid-template-rows: auto ;
-    /* width: 100%; */
     padding: 25px;
     border: 100px;
     margin: 10px;
@@ -338,11 +359,6 @@ button{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows:auto ;
-    /* grid-template-areas: 
-        "mision_titulo mision_titulo mision_titulo"
-        "mision_p_1 mision_p_2 mision_p_3"
-    ; */
-
 }
 
 #mision_vision div{
@@ -357,30 +373,13 @@ button{
     width: 250px;
 }
 
-/* .Titulo_staff{
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-    border: 100px;
-    margin: 10px;
-    background-color: #A8A9FA;
-    border-radius: 10px;
+.imagenesde_staff{
+    height: 220;
+    transition: height 2s;
 }
-
-#staff{
-    display: grid!important;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
-    grid-template-rows: 1fr!important;
-    grid-area: 
-        "foto1 foto2 foto3 foto4 foto5"
-    ;
-   
-    text-align: center;
-    padding: 25px;
-    border: 100px;
-    margin: 10px;
-
-} */
+.imagenesde_staff:hover{
+    height: 230px;
+}
 
 
 .Armadodecv{
