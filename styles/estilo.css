@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@0,400;1,300 & family= Roboto+Flex:opsz,wght@8..144,100;8 ..144,400;8..144,600;8..144,700;8..144,800 & family= Roboto:wght@100;300;400;500;700;900 & display=swap");
-@import "./partials/reset.css";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+} /*# sourceMappingURL=reset.css.map */
 header {
   background: rgb(90, 123, 186);
   background: linear-gradient(90deg, rgb(90, 123, 186) 0%, rgb(36, 29, 117) 55%);
@@ -136,14 +140,6 @@ header .menu img {
     display: block;
   }
 }
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 25px 0px;
-  background-color: rgb(255, 102, 0);
-  color: white;
-}
-
 @media (max-width: 1040px) {
   .caja1 {
     background-image: none !important;
@@ -571,4 +567,12 @@ button {
 
 .areadetexto {
   padding-left: 150px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+  background-color: rgb(255, 102, 0);
+  color: white;
+}/*# sourceMappingURL=estilo.css.map */
