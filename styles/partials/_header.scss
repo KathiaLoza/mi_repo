@@ -7,94 +7,39 @@ header{
     display: flex;
     justify-content: space-between;
 
-    .titulo{
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar-brand{
         color: rgb(252, 252, 252);
         font-weight: 900;
         font-size: 36px;
     }
-    
-    .menu{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    height: 100%;
-    }
-    
-    .menu li{
-        margin-right: 10px;
-        font-weight: 200;
-        font-size: 11px;
-        text-align: right;
-    }
-    
 
-    .menu a{
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    .menu img{
-        margin-bottom: -6px;
-        width: 32px;
-        height: 32px;
-    }
-}
-
-@media (max-width: 1040px){
-    ul{
-        display: none;
-    }
-    
-    .menu{
-        display: none;
-    }
-    input:checked  ~ ul{
-        display:block;
-    }
-    #input_menu {
-        display: none;
-    }
-    #label_menu {
+    .nav-link{
         box-sizing: border-box;
-        display: inline-block;
-        border: 1px solid white;
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-        color: white;
-    
+        font-family: "Roboto Flex", sans-serif;
+        color: rgb(255, 255, 255);
     }
-    .menu li{
-        display: block;
-        /* background: lightgrey; */
-        margin: 0;
-        padding: 10px;
-        list-style: none;
-        border-bottom: 1px solid grey;
-        text-align: center;
+
+    .nav-link:hover{
+        font-size: 20px;
+        color: rgb(139, 145, 230);
     }
-    
-    .botones{
-        border:none!important;
+
+    .navbar-collapse{
+        flex-grow:0;
     }
-    .menu img{
-        margin-bottom: -6px;
-        width: 20px;
-        height: 20px;
+
+    .iconos_responsive a{
+        margin-right: 10px;
     }
 }
+
 .iconos_responsive{
     display:flex;
     justify-content: space-between;
-}
-
-.estilomenu{
-    font-size: 15px;
-    transition: all 1s;
 }
 
 .estilomenu:hover{
