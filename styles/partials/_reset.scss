@@ -2,5 +2,15 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: $fontRoboto;
+
+  &::selection{
+    background-color: rgba(255, 127, 80, 0.507);
+    color: black;
+  }
 }/*# sourceMappingURL=reset.css.map */
+
+// *::selection{
+//   background-color: rgba(255, 127, 80, 0.507);
+//   color: black;
+// }

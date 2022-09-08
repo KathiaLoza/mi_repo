@@ -1,10 +1,10 @@
 header{
-    background: rgb(90,123,186);
-    background: linear-gradient(90deg, rgba(90,123,186,1) 0%, rgba(36,29,117,1) 55%);
+    background: $secondaryColor;
+    background: $mainColor;
     padding: 20px;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: $fontRoboto;
     top: 0px;
-    display: flex;
+    display: flex; 
     justify-content: space-between;
 
     .navbar{
@@ -19,7 +19,7 @@ header{
 
     .nav-link{
         box-sizing: border-box;
-        font-family: "Roboto Flex", sans-serif;
+        font-family: $fontRoboto;
         color: rgb(255, 255, 255);
     }
 
@@ -35,6 +35,7 @@ header{
     .iconos_responsive a{
         margin-right: 10px;
     }
+
 }
 
 .iconos_responsive{

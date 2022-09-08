@@ -1,14 +1,25 @@
+@import url("https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 & family= Roboto+Flex:opsz, wght@8..144,100;8..144,400;8..144,600;8..144,700;8..144,800 & display=swap");
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: "Roboto Flex", sans-serif;
-} /*# sourceMappingURL=reset.css.map */
+  font-family: "Roboto Condensed", sans-serif;
+}
+*::-moz-selection {
+  background-color: rgba(255, 127, 80, 0.507);
+  color: black;
+}
+*::selection {
+  background-color: rgba(255, 127, 80, 0.507);
+  color: black;
+}
+
+/*# sourceMappingURL=reset.css.map */
 header {
   background: rgb(90, 123, 186);
   background: linear-gradient(90deg, rgb(90, 123, 186) 0%, rgb(36, 29, 117) 55%);
   padding: 20px;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   top: 0px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +34,7 @@ header .navbar-brand {
 }
 header .nav-link {
   box-sizing: border-box;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: rgb(255, 255, 255);
 }
 header .nav-link:hover {
@@ -390,6 +401,23 @@ button {
   height: 200px;
 }
 
+@media (max-width: 700px) {
+  #armardo_de_cv {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #escucha_activa {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+  }
+  #comportamiento {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
 #armardo_de_cv {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -470,6 +498,16 @@ button {
   text-align: center;
 }
 
+@media (max-width: 700px) {
+  .inicio_formulario {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .form_input {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
 .motivo_vinculo {
   font-weight: 200px;
   font-size: 14px;
@@ -542,6 +580,17 @@ button {
 
 .areadetexto {
   padding-left: 150px;
+}
+
+.enviarform {
+  width: 130px;
+  transition: width 1s;
+  background-color: rgb(207, 172, 15);
+  width: 120px;
+}
+
+.enviarform:hover {
+  width: 140px;
 }
 
 footer {

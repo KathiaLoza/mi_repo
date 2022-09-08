@@ -153,6 +153,8 @@
     background-color: #3434364d;
 }
 
+
+
 .caja3{
     color: white;
     width: 100%;
@@ -299,6 +301,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
 }
 
 
+// Talleres y cursos
 
 .Armadodecv{
     color: black;
@@ -315,6 +318,24 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     border-radius: 10px;
     margin: 10px;
     height: 200px;
+}
+
+@media (max-width: 700px){
+    #armardo_de_cv{
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center !important;
+    }
+    #escucha_activa{
+        display: flex!important;
+        flex-direction: column-reverse!important;
+        align-items: center !important;
+    }
+    #comportamiento{
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center !important;
+    }
 }
 
 #armardo_de_cv{
@@ -379,6 +400,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     font-size: 12px;
 }
 
+
+
 .titulopages{
     padding: 15px;
     display: flex;
@@ -397,6 +420,17 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     text-align: center;
 }
 
+@media (max-width: 700px){
+    .inicio_formulario{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .form_input{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
 .motivo_vinculo{
     font-weight: 200px;
     font-size: 14px;
@@ -411,6 +445,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     grid-template-columns: 50% 50%;
     padding: 20px;
 }
+
+
 
 .contenedor_radius{
     display: flex;
@@ -455,3 +491,16 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
 .areadetexto{
     padding-left: 150px;
 }
+
+.enviarform{
+    width: 130px;
+    transition: width 1s;
+    background-color: rgb(207, 172, 15);
+    width: 120px;
+}
+
+.enviarform:hover{
+    width: 140px;
+}
+
+
