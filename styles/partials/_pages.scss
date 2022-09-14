@@ -93,8 +93,10 @@
     background-position: center left ;
     border-radius: 30px ;
 
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    transition: all 400ms ease;
+    // box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    // transition: all 400ms ease;
+
+    @extend %plantillahover
 }
 
 .caja1 h3{
@@ -106,10 +108,10 @@
     font-weight: 200px;
 }
 
-.caja1:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
+// .caja1:hover{
+//     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+//     transform: translateY(-3%);
+// }
 .caja2{
     color: rgb(255, 255, 255);
     width: 50%;
@@ -125,8 +127,10 @@
     background-position: center left;
     border-radius: 30px;
 
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    transition: all 400ms ease;
+    // box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    // transition: all 400ms ease;
+
+    @extend %plantillahover
 }
 
 .caja2 h3{
@@ -138,10 +142,10 @@
     font-weight: 200px;
 }
 
-.caja2:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
+// .caja2:hover{
+//     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+//     transform: translateY(-3%);
+// }
 
 .button_animado{
     width: 130px;
@@ -165,8 +169,11 @@
     background: rgb(110,125,191);
     background: radial-gradient(circle, rgba(110,125,191,1) 41%, rgba(111,187,221,1) 100%);
     border-radius: 30px;  
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    transition: all 400ms ease;
+
+    // box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    // transition: all 400ms ease;
+
+    @extend %plantillahover
 }
 .caja3 h3{
     font-weight: 400;
@@ -177,10 +184,10 @@
     font-weight: 200px;
 }
 
-.caja3:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
+// .caja3:hover{
+//     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+//     transform: translateY(-3%);
+// }
 
 .novedades h3{
     text-align: center;
@@ -289,17 +296,23 @@ button{
     width: 250px;
 }
 
+.Titulo_staff{
+    text-align: center;
+}
 .imagenesde_staff{
     height: 220;
-    transition: height 0.5s;
+    margin: 15px;
+    border: 20px;
+    padding: 5px;
+    transition:  all 1s ease;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-}
-.imagenesde_staff:hover{
-    height: 230px;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+    @extend %plantillahover
 }
 
+.container{
+    max-width: 3000px;
+}
 
 // Talleres y cursos
 
@@ -312,8 +325,10 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     margin: 10px;
     text-align: center;
     line-height: 30px;
-    background-color: #D0E8DD;
+    background: rgb(108,199,218);
+    background: radial-gradient(circle, rgba(108,199,218,0.6671043417366946) 16%, rgba(140,149,224,0.9051995798319328) 93%);
     border-radius: 10px 0px 0px 10px;
+    @extend %plantillahover
 }
 
 #armardo_de_cv img{
@@ -352,8 +367,10 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     margin: 10px;
     text-align: center;
     line-height: 30px;
-    background-color: #D0E8DD;
+    background: rgb(108,199,218);
+    background: radial-gradient(circle, rgba(108,199,218,0.6671043417366946) 16%, rgba(140,149,224,0.9051995798319328) 93%);
     border-radius: 0px 10px 10px 0px;
+    @extend %plantillahover
 }
 
 #escucha_activa img{
@@ -375,8 +392,10 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     margin: 10px;
     text-align: center;
     line-height: 30px;
-    background-color: #D0E8DD;
+    background: rgb(108,199,218);
+    background: radial-gradient(circle, rgba(108,199,218,0.6671043417366946) 16%, rgba(140,149,224,0.9051995798319328) 93%);
     border-radius: 10px 0px 0px 10px;
+    @extend %plantillahover
 }
 
 #comportamiento img{
@@ -472,12 +491,36 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
         "datosciudad datosarea" ;
 }
 
-.datosdni{ grid-area: datosdni;}
-.datosnombre{ grid-area: datosnombre;}
-.datosemail{ grid-area: datosemail;}
-.datostelefono{ grid-area: datostelefono;}
-.datosciudad{ grid-area: datosciudad;}
-.datosarea{ grid-area: datosarea;}
+@mixin tamanos ($padding, $border) {
+    padding: $padding;
+    border: $border;
+}
+
+.datosdni{ 
+    grid-area: datosdni;
+    @include tamanos (5px, 10px);
+}
+.datosnombre{ 
+    grid-area: datosnombre;
+    @include tamanos (5px, 10px);
+}
+.datosemail{ 
+    grid-area: datosemail;
+    @include tamanos (5px, 10px);
+}
+.datostelefono{ 
+    grid-area: datostelefono;
+    @include tamanos (5px, 10px);
+}
+.datosciudad{ 
+    grid-area: datosciudad;
+    @include tamanos (5px, 10px);
+}
+.datosarea{
+    grid-area: datosarea;
+    @include tamanos (5px, 10px);
+}
+
 
 .form_input div{
     display: flex;
@@ -505,4 +548,72 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 1
     width: 140px;
 }
 
+// Trabajos
+.bolsadeempleos{
+    padding: 5px;
+    margin: 10px;
+}
 
+.bolsadeempleos p{
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.formadetrabajo{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#buscarempleo{
+    text-align: center;
+}
+
+
+
+.ultimosempleos{
+    width: 100%;
+    margin: 5px;
+    border: 5px;
+    // @for $item from 1 through 3 {
+    //     .cardempleos#{$item}{
+    //         animation-delay: $item*1s;
+    //     }
+    // }
+    @each $color in $colors {
+        .cardempleos#{$color}{
+            background-color: $color;
+        }
+    }
+}
+
+.cardempleos{
+    -webkit-animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both;
+    width: auto;
+    // height: 120px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: default;
+}
+
+.cardempleo-super:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    height: 130px;
+    transform: translateY(-5%);
+    transition: all 0.8s ease;
+}
+
+.cardempleo-calidad{
+    @extend .cardempleo-super
+}
+.cardempleo-jefe{
+    @extend .cardempleo-super
+}
+
+
+
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}

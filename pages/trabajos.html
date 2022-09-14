@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultora de RRHH - Trabajos</title>
-    <meta name="description" content="Tenemos diferentes puestos para ofrecerte">
+    <meta name="description" content="Si estás buscando empleo, tenemos la mejor plataforma para ofrecerte, proporcionandote profesionalismo y resguardando tus datos">
     <meta name="keywords" content="Recursos Humanos, RRHH, trabajo, capacitacion, entrevista, busqueda laboral">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./../styles/estilo.css">
@@ -29,9 +29,9 @@
                     <a class="nav-link" href="cv.html">Cargá tu CV</a>
                     <ul>
                         <div class="iconos_responsive">
-                                <a href=""><img src="/Imagenes/icon-fb.png" class="rotate" alt="" ></a>
-                                <a href=""><img src="/Imagenes/icon-ig.png" class="rotate" alt=""></a>
-                                <a href=""><img src="/Imagenes/icon-phone.png" class="rotate" alt=""></a>
+                                <a href=""><img src="/Imagenes/icon-fb.png" class="rotate rotateicon-1" alt="icono fb" ></a>
+                                <a href=""><img src="/Imagenes/icon-ig.png" class="rotate rotateicon-2" alt="icono ig"></a>
+                                <a href=""><img src="/Imagenes/icon-phone.png" class="rotate rotateicon-3" alt="icono telefono"></a>
                         </div>
                     </ul>
                 </div>
@@ -39,10 +39,90 @@
             </div>
             </nav>
     </header>
+    <section>
+        <div class="titulopages">
+            <h3>Bolsa de empleos</h3>
+        </div>
+    </section>
+    <hr>
+    <section class="bolsadeempleos">
+        <p>Tu profesión o servicio ideal</p>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Profesión</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <p>Ciudad</p>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Ciudad</option>
+            <option value="1">Córdoba</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Santa Fe</option>
+        </select>
+        <p>¿De que forma te gustaría trabajar?</p>
+        <div class="formadetrabajo">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Presencial
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Remoto
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Hibrido
+                </label>
+            </div>
+        </div>
+        <div id="buscarempleo"> 
+            <button type="button"  class="enviarform">Buscar</button>
+        </div>
+    </section>
+    <section class="ultimosempleos">
+        <h3>Empleos más recientes</h3>
+        <div class="cardempleos cardempleosviolet cardempleo-super">
+            <h4>
+                Supervisor de operaciones
+            </h4>
+            <p>
+                Nos encontramos en la Busqueda de un Supervisor Operativo de Sucursal para importante Empresa de Logistica ubicada en...
+            </p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="cardempleos cardempleoslavender cardempleo-calidad">
+            <h4>
+                Analista de calidad
+            </h4>
+            <p>
+                Analista de calidad eventual para importante empresa ubicada en Villa Carlos Paz...
+            </p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="cardempleos cardempleosskyblue cardempleo-jefe">
+            <h4>
+                Jefe de piso
+            </h4>
+            <p>
+                Si te interesa liderar, facilitar y supervisar al equipo de trabajo en la gestión operativa, a fin de garantizar una...
+            </p>
+            <a href="#">Leer más</a>
+        </div>
+    </section>
     <footer>
-        <h6>Contactanos</h6>
-        <p>0810-000-0000</p>
-        <p>rrhh@consultora.com.ar</p>
+        
+            <h6 class="p-h6">Contactanos</h6>
+            <p class="p-h5">0810-000-0000</p>
+            <p class="p-h4">rrhh@consultora.com.ar</p>
+      
     </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
