@@ -10,6 +10,7 @@ header{
     .navbar{
         width: 100%;
 
+
         .navbar-brand{
             color: rgb(252, 252, 252);
             font-weight: 900;
@@ -17,16 +18,18 @@ header{
         }
     
         .nav-link{
-            box-sizing: border-box;
-            font-family: $fontRoboto;
-            color: rgb(255, 255, 255);
-
-            
-            .nav-link:hover{
-                font-size: 20px;
-                color: rgb(139, 145, 230);
-            }
+            @extend %plantillahover
         }
+        .nav-link{
+            color: white;
+            margin: auto;
+            box-shadow: none;
+        }
+    .nav-link_subrayada{
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    }
         
         .navbar-collapse{
             flex-grow:0;
@@ -49,7 +52,7 @@ header{
             }
         }
     }
-}
+
 
 
 
@@ -68,9 +71,24 @@ header{
     }
     
 }
+@media (max-width: 1000px){
+    .navbar-brand{
+        font-size: 30px !important;
+    }
+}
+
 @media (max-width: 600px){
     header{
         display: block;
+    }
+    .navbar-brand{
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 400px){
+    .navbar-brand{
+        font-size: 20px !important;
     }
 }
 

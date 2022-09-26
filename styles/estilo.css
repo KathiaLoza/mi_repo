@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 & family= Roboto+Flex:opsz, wght@8..144,100;8..144,400;8..144,600;8..144,700;8..144,800 & display=swap");
-.tallerdecomportamiento, .escuchaactiva, .Armadodecv, .imagenesde_staff, .caja3, .caja2, .caja1 {
+.escuchaactiva, .ingresa_aqui, #talleres, .imagenesde_staff, .caja3, .caja2, .caja1, header .navbar .nav-link {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.8s ease;
 }
-.tallerdecomportamiento:hover, .escuchaactiva:hover, .Armadodecv:hover, .imagenesde_staff:hover, .caja3:hover, .caja2:hover, .caja1:hover {
+.escuchaactiva:hover, .ingresa_aqui:hover, #talleres:hover, .imagenesde_staff:hover, .caja3:hover, .caja2:hover, .caja1:hover, header .navbar .nav-link:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
@@ -42,41 +42,42 @@ header .navbar .navbar-brand {
   font-size: 36px;
 }
 header .navbar .nav-link {
-  box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
+  margin: auto;
+  box-shadow: none;
 }
-header .navbar .nav-link .nav-link:hover {
-  font-size: 20px;
-  color: rgb(139, 145, 230);
+header .navbar .nav-link_subrayada {
+  text-decoration: underline;
+  font-weight: 600;
 }
-header .navbar .navbar-collapse {
+header .navbar-collapse {
   flex-grow: 0;
 }
-header .iconos_responsive .iconos_responsive a {
+
+.iconos_responsive .iconos_responsive a {
   margin-right: 20px;
 }
-header .iconos_responsive .rotateicon-1 {
+.iconos_responsive .rotateicon-1 {
   -webkit-animation: bounce-in-top 1.5s both;
   animation: bounce-in-top 1.5s both;
 }
-header .iconos_responsive .rotateicon-2 {
+.iconos_responsive .rotateicon-2 {
   -webkit-animation: bounce-in-top 1.5s both;
   animation: bounce-in-top 1.5s both;
 }
-header .iconos_responsive .rotateicon-3 {
+.iconos_responsive .rotateicon-3 {
   -webkit-animation: bounce-in-top 1.5s both;
   animation: bounce-in-top 1.5s both;
 }
-header .iconos_responsive .rotateicon-1 {
+.iconos_responsive .rotateicon-1 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-header .iconos_responsive .rotateicon-2 {
+.iconos_responsive .rotateicon-2 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-header .iconos_responsive .rotateicon-3 {
+.iconos_responsive .rotateicon-3 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
@@ -93,9 +94,22 @@ header .iconos_responsive .rotateicon-3 {
     display: none;
   }
 }
+@media (max-width: 1000px) {
+  .navbar-brand {
+    font-size: 30px !important;
+  }
+}
 @media (max-width: 600px) {
   header {
     display: block;
+  }
+  .navbar-brand {
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 400px) {
+  .navbar-brand {
+    font-size: 20px !important;
   }
 }
 @-webkit-keyframes bounce-in-top {
@@ -229,6 +243,10 @@ header .iconos_responsive .rotateicon-3 {
     grid-template-columns: 100% !important;
     grid-template-rows: auto;
   }
+  .mision {
+    padding: 40px !important;
+    width: auto;
+  }
   #mision_vision {
     display: grid !important;
     grid-template-columns: 100% !important;
@@ -253,6 +271,10 @@ header .iconos_responsive .rotateicon-3 {
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
+#inicio .nav-link_subrayada {
+  text-decoration: underline;
+  font-weight: 600;
+}
 
 #persona_empresa {
   display: flex;
@@ -262,7 +284,7 @@ header .iconos_responsive .rotateicon-3 {
 .caja1 {
   color: rgb(255, 255, 255);
   width: 50%;
-  height: 200px;
+  height: auto;
   padding: 50px;
   margin: 10px;
   text-align: center;
@@ -288,7 +310,7 @@ header .iconos_responsive .rotateicon-3 {
 .caja2 {
   color: rgb(255, 255, 255);
   width: 50%;
-  height: 200px;
+  height: auto;
   padding: 50px;
   margin: 10px;
   text-align: center;
@@ -323,8 +345,7 @@ header .iconos_responsive .rotateicon-3 {
 
 .caja3 {
   color: white;
-  width: 100%;
-  height: 250px;
+  width: auto;
   padding: 20px;
   text-align: center;
   line-height: 30px;
@@ -359,7 +380,8 @@ header .iconos_responsive .rotateicon-3 {
 }
 
 .consultas {
-  width: 100%;
+  width: auto;
+  height: auto;
   text-align: center;
   padding: 45px 0px;
   background-color: #1d4174;
@@ -385,7 +407,6 @@ button {
 
 .nosotros {
   color: black;
-  height: 100px;
   padding: 25px;
   border: 20px;
   margin: 10px;
@@ -414,14 +435,13 @@ button {
 }
 
 .mision {
-  padding: 120px 100px;
-  border: 100px;
-  margin: 0px;
-  text-align: center;
-  background-image: url(./../Imagenes/naranja.png);
-  background-position: center center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 45vh;
+  background-image: url(./../../Imagenes/fondorrhh1.png);
+  background-size: cover;
 }
 
 #mision_vision {
@@ -436,10 +456,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-#mision_vision img {
-  width: 250px;
+  padding: 0px 20px 0px 20px;
 }
 
 .Titulo_staff {
@@ -460,24 +477,73 @@ button {
   max-width: 3000px;
 }
 
-.Armadodecv {
-  color: black;
-  height: 200px;
-  padding: 50px;
-  margin: 10px;
+.talleresycursos {
+  padding: 10px 20px 10px 20px;
+  min-width: auto;
+  margin: 5px;
+}
+
+#talleres {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  line-height: 30px;
-  background: rgb(108, 199, 218);
-  background: radial-gradient(circle, rgba(108, 199, 218, 0.6671043417) 16%, rgba(140, 149, 224, 0.9051995798) 93%);
-  border-radius: 10px 0px 0px 10px;
-}
-
-#armardo_de_cv img {
+  height: auto;
   border-radius: 10px;
-  margin: 10px;
-  height: 200px;
 }
 
+.Armadodecv {
+  background-color: #3046b4;
+  height: 15rem;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+  width: 30%;
+}
+
+.Armadodecv p {
+  margin: 5px;
+}
+
+.dificultad {
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.dificultad h5 {
+  opacity: 1;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.ingresa_aqui {
+  color: white;
+  background-color: #3046b4;
+  width: 140px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.301);
+}
+
+@media (max-width: 600px) {
+  #talleres {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .Armadodecv {
+    width: 100%;
+  }
+  .dificultad {
+    width: 100%;
+  }
+}
 @media (max-width: 700px) {
   #armardo_de_cv {
     display: flex !important;
@@ -495,11 +561,6 @@ button {
     align-items: center !important;
   }
 }
-#armardo_de_cv {
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
 .escuchaactiva {
   color: black;
   height: 200px;
@@ -512,59 +573,13 @@ button {
   border-radius: 0px 10px 10px 0px;
 }
 
-#escucha_activa img {
-  border-radius: 10px 0px 0px 10px;
-  width: 100%;
-  margin: 10px;
-  height: 200px;
-}
-
-#escucha_activa {
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.tallerdecomportamiento {
-  color: black;
-  height: 200px;
-  padding: 50px;
-  margin: 10px;
-  text-align: center;
-  line-height: 30px;
-  background: rgb(108, 199, 218);
-  background: radial-gradient(circle, rgba(108, 199, 218, 0.6671043417) 16%, rgba(140, 149, 224, 0.9051995798) 93%);
-  border-radius: 10px 0px 0px 10px;
-}
-
-#comportamiento img {
-  border-radius: 10px;
-  margin: 10px;
-  height: 200px;
-}
-
-#comportamiento {
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
-.boton_de_servicios {
-  color: rgb(0, 0, 0);
-  background-color: #FFFFFF;
-  background: transparent;
-  border: 2px solid rgb(0, 0, 0);
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin: 15px;
-  font-weight: 600;
-  font-size: 12px;
-}
-
 .titulopages {
   padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/Imagenes/naranja.png);
+  color: white;
+  background-image: url(/Imagenes/fondorrhh1.png);
   background-position: center;
   background-size: 100%;
   height: 245px;
@@ -623,37 +638,37 @@ button {
 
 .datosdni {
   grid-area: datosdni;
-  padding: 5px;
+  padding: 20px;
   border: 10px;
 }
 
 .datosnombre {
   grid-area: datosnombre;
-  padding: 5px;
+  padding: 20px;
   border: 10px;
 }
 
 .datosemail {
   grid-area: datosemail;
-  padding: 5px;
+  padding: 20px;
   border: 10px;
 }
 
 .datostelefono {
   grid-area: datostelefono;
-  padding: 5px;
+  padding: 20px;
   border: 10px;
 }
 
 .datosciudad {
   grid-area: datosciudad;
-  padding: 5px;
+  padding: 20px;
   border: 10px;
 }
 
 .datosarea {
   grid-area: datosarea;
-  padding: 5px;
+  padding: 20px;
   border: 10px;
 }
 
@@ -670,7 +685,8 @@ button {
 }
 
 .areadetexto {
-  padding-left: 150px;
+  padding: 10px;
+  margin: 20px;
 }
 
 .enviarform {
@@ -707,21 +723,21 @@ button {
 }
 
 .ultimosempleos {
-  width: 100%;
   margin: 5px;
   border: 5px;
 }
-.ultimosempleos .cardempleosviolet {
-  background-color: violet;
+.ultimosempleos .cardempleosblue {
+  background-color: blue;
 }
-.ultimosempleos .cardempleoslavender {
-  background-color: lavender;
+.ultimosempleos .cardempleosblue {
+  background-color: blue;
 }
-.ultimosempleos .cardempleosskyblue {
-  background-color: skyblue;
+.ultimosempleos .cardempleosblue {
+  background-color: blue;
 }
 
 .cardempleos {
+  color: white;
   -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   width: auto;
@@ -734,7 +750,6 @@ button {
 
 .cardempleo-super:hover, .cardempleo-jefe:hover, .cardempleo-calidad:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  height: 130px;
   transform: translateY(-5%);
   transition: all 0.8s ease;
 }

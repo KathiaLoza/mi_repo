@@ -2,11 +2,10 @@
 
 $fontRoboto: 'Roboto Condensed', sans-serif;
 
-
 $mainColor: linear-gradient(90deg, rgba(90,123,186,1) 0%, rgba(36,29,117,1) 55%);
 $secondaryColor: rgb(90,123,186);
 
-$colors:violet,lavender, skyblue;
+$colors: blue,blue, blue;
 
 %plantillahover{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
@@ -16,4 +15,5 @@ $colors:violet,lavender, skyblue;
         transform: translateY(-3%);
     }
 }
+
 

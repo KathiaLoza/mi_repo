@@ -44,6 +44,11 @@
     grid-template-columns: 100% !important;
     grid-template-rows: auto ;
     }
+
+    .mision{
+        padding: 40px !important;
+        width: auto;
+    }
     #mision_vision{
         display: grid !important;
         grid-template-columns: 100% !important;
@@ -70,6 +75,11 @@
 #inicio{
     color:rgb(255, 255, 255);
     font-weight: bold;
+
+    .nav-link_subrayada{
+        text-decoration: underline;
+        font-weight: 600;
+    }
 }
 
 #persona_empresa{
@@ -80,7 +90,7 @@
 .caja1{
     color: rgb(255, 255, 255);
     width: 50%;
-    height: 200px;
+    height: auto;
     padding: 50px;
     margin: 10px;
     text-align: center;
@@ -115,7 +125,7 @@
 .caja2{
     color: rgb(255, 255, 255);
     width: 50%;
-    height: 200px;
+    height: auto;
     padding: 50px;
     margin: 10px;
     text-align: center;
@@ -161,8 +171,7 @@
 
 .caja3{
     color: white;
-    width: 100%;
-    height: 250px;
+    width: auto;
     padding: 20px;
     text-align: center;
     line-height: 30px;
@@ -184,11 +193,6 @@
     font-weight: 200px;
 }
 
-// .caja3:hover{
-//     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-//     transform: translateY(-3%);
-// }
-
 .novedades h3{
     text-align: center;
 }
@@ -205,8 +209,8 @@
 }
 
 .consultas{
-    width: 100%;
-
+    width: auto;
+    height: auto;
     text-align: center;
     padding: 45px 0px;
     background-color: #1d4174;  
@@ -233,11 +237,10 @@ button{
 }
 
 
-
+// Pag NOSOTROS
 
 .nosotros{
     color: black;
-    height: 100px;
     padding: 25px;
     border: 20px;
     margin: 10px;
@@ -246,8 +249,6 @@ button{
     background-color: #D0E8DD;
     border-radius: 10px;
 }
-
-
 
 .textnosotros{
     display: grid;
@@ -266,18 +267,17 @@ button{
     padding: 5px;
 }
 
-
-
 .mision{
-    padding: 120px 100px;
-    border: 100px;
-    margin: 0px;
-    text-align: center;
-    background-image: url(./../Imagenes/naranja.png);
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 45vh;
+    background-image: url(./../../Imagenes/fondorrhh1.png);
+    background-size: cover;
 }
+
+
 #mision_vision{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -290,11 +290,9 @@ button{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0px 20px 0px 20px;
 }
 
-#mision_vision img{
-    width: 250px;
-}
 
 .Titulo_staff{
     text-align: center;
@@ -316,25 +314,74 @@ button{
 
 // Talleres y cursos
 
+.talleresycursos{
+    padding: 10px 20px 10px 20px;
+    min-width: auto;
+    margin: 5px;
+}
 
-
-.Armadodecv{
-    color: black;
-    height: 200px;
-    padding: 50px;
-    margin: 10px;
+#talleres{
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    line-height: 30px;
-    background: rgb(108,199,218);
-    background: radial-gradient(circle, rgba(108,199,218,0.6671043417366946) 16%, rgba(140,149,224,0.9051995798319328) 93%);
-    border-radius: 10px 0px 0px 10px;
+    height: auto;
+    border-radius: 10px;
     @extend %plantillahover
 }
 
-#armardo_de_cv img{
-    border-radius: 10px;
-    margin: 10px;
-    height: 200px;
+.Armadodecv{
+    background-color: #3046b4;
+    height: 15rem;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: white;
+    width: 30%;
+}
+
+.Armadodecv p{
+    margin: 5px;
+}
+
+.dificultad{
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 70%;  
+}
+
+.dificultad h5{
+    opacity: 1;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.ingresa_aqui{
+    color: white;
+    background-color: #3046b4;
+    width: 140px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.301);
+    @extend %plantillahover;
+}
+
+@media (max-width: 600px){
+    #talleres{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .Armadodecv{
+        width: 100%;
+    }
+    .dificultad{
+        width: 100%;
+    }
 }
 
 @media (max-width: 700px){
@@ -355,11 +402,6 @@ button{
     }
 }
 
-#armardo_de_cv{
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
 .escuchaactiva{
     color: black;
     height: 200px;
@@ -373,67 +415,19 @@ button{
     @extend %plantillahover
 }
 
-#escucha_activa img{
-    border-radius: 10px 0px 0px 10px;
-    width: 100%;
-    margin: 10px;
-    height: 200px;
-}
-
-#escucha_activa{
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
-
-.tallerdecomportamiento{
-    color: black;
-    height: 200px;
-    padding: 50px;
-    margin: 10px;
-    text-align: center;
-    line-height: 30px;
-    background: rgb(108,199,218);
-    background: radial-gradient(circle, rgba(108,199,218,0.6671043417366946) 16%, rgba(140,149,224,0.9051995798319328) 93%);
-    border-radius: 10px 0px 0px 10px;
-    @extend %plantillahover
-}
-
-#comportamiento img{
-    border-radius: 10px;
-    margin: 10px;
-    height: 200px;
-}
-
-#comportamiento{
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
-.boton_de_servicios{
-    color: rgb(0, 0, 0);
-    background-color: #FFFFFF;
-    background: transparent;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin: 15px;
-    font-weight: 600;
-    font-size: 12px;
-}
-
-// Formulario
-
 .titulopages{
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/Imagenes/naranja.png);
+    color: white;
+    background-image: url(/Imagenes/fondorrhh1.png);
     background-position: center;
     background-size: 100%;
     height: 245px;
     background-repeat: no-repeat;
 }
+// Formulario
 
 .inicio_formulario p{
     font-weight: 400;
@@ -498,27 +492,27 @@ button{
 
 .datosdni{ 
     grid-area: datosdni;
-    @include tamanos (5px, 10px);
+    @include tamanos (20px, 10px);
 }
 .datosnombre{ 
     grid-area: datosnombre;
-    @include tamanos (5px, 10px);
+    @include tamanos (20px, 10px);
 }
 .datosemail{ 
     grid-area: datosemail;
-    @include tamanos (5px, 10px);
+    @include tamanos (20px, 10px);
 }
 .datostelefono{ 
     grid-area: datostelefono;
-    @include tamanos (5px, 10px);
+    @include tamanos (20px, 10px);
 }
 .datosciudad{ 
     grid-area: datosciudad;
-    @include tamanos (5px, 10px);
+    @include tamanos (20px, 10px);
 }
 .datosarea{
     grid-area: datosarea;
-    @include tamanos (5px, 10px);
+    @include tamanos (20px, 10px);
 }
 
 
@@ -534,7 +528,8 @@ button{
 }
 
 .areadetexto{
-    padding-left: 150px;
+    padding: 10px;
+    margin: 20px;
 }
 
 .enviarform{
@@ -567,44 +562,34 @@ button{
     justify-content: space-evenly;
 }
 
-#buscarempleo{
-    text-align: center;
+@media (max-width: 400px){
+    .formadetrabajo{
+        display: none;
+    }
 }
-
-
-
 .ultimosempleos{
-    width: 100%;
     margin: 5px;
     border: 5px;
-    // @for $item from 1 through 3 {
-    //     .cardempleos#{$item}{
-    //         animation-delay: $item*1s;
-    //     }
-    // }
     @each $color in $colors {
         .cardempleos#{$color}{
             background-color: $color;
         }
     }
-}
+
+
 
 .cardempleos{
+    color: white;
     -webkit-animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both;
     width: auto;
-    // height: 120px;
     margin: 20px;
     padding: 10px;
     border-radius: 6px;
     overflow: hidden;
     cursor: default;
-}
-
-.cardempleo-super:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    height: 130px;
-    transform: translateY(-5%);
-    transition: all 0.8s ease;
+    display: flex;
+    justify-content: space-between;
+    @extend %plantillahover
 }
 
 .cardempleo-calidad{
@@ -616,4 +601,4 @@ button{
 
 
 
-@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}}
